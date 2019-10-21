@@ -1,0 +1,16 @@
+PROJEKT : dzialanie automatu testowego
+lib/ (8 easy, 8 medium, 1 hard) classy rozwiazan zadan np bottle.rb
+test/
+spec/
+gemfile   Bundler: Environment, test, development, production
+	(gem bundle) https://bundler.io/pl/
+readme.md 
+
+1) travis CI - 3 wersje Rubiego (do 2.3.8 i dalej pn 2.6.3)
+	
+2) badges : Travis, Code Climate (paseczek zielony/czerwnoy czy testy przechodza, maintenence)
+
+3) code coverage: simple cov - trzeba to zaintalowac i uruchomic jako piersze, przed reszta programu
+trzeba przetestowac lib/ jako pokrycie kodu testami (fillters) 
+
+rspec - http://www.betterspecs.org/
