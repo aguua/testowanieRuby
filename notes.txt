@@ -14,3 +14,9 @@ readme.md
 trzeba przetestowac lib/ jako pokrycie kodu testami (fillters) 
 
 rspec - http://www.betterspecs.org/
+ w schemacie :
+ $rspec 
+zwraca:
+ NAZWA KLASY
+	testy dostapne dla tej klasy
+
