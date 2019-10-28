@@ -1,5 +1,7 @@
 language: ruby
 rvm:
   - 2.6
+  - 2.3
+
 script:
-  - bundle exec ruby test/acronym_test.rb 
+  - bundle exec ruby test/* 
