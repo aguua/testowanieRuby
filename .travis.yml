@@ -2,4 +2,4 @@ language: ruby
 rvm:
   - 2.6
 script:
-  - bundle exec test/acronym_test.rb 
+  - bundle exec ruby test/acronym_test.rb 
