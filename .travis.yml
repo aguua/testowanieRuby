@@ -1,5 +1,5 @@
 language: ruby
 rvm:
- - 2.6
-env:
-$RACK_ENV = test/acronym_test.rb 
+  - 2.6
+script:
+  - bundle exec test/acronym_test.rb 
