@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'bowling'
+require_relative '../lib/bowling'
 
 # Common test data version: 1.2.0 1806718
 class BowlingTest < Minitest::Test

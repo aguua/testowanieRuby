@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'luhn'
+require_relative '../lib/luhn'
 
 # Common test data version: 1.4.0 4a80663
 class LuhnTest < Minitest::Test

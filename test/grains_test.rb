@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'grains'
+require_relative '../lib/grains'
 
 # Common test data version: 1.2.0 2ec42ab
 class GrainsTest < Minitest::Test

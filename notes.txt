@@ -7,6 +7,8 @@ gemfile   Bundler: Environment, test, development, production
 readme.md 
 
 1) travis CI - 3 wersje Rubiego (do 2.3.8 i dalej pn 2.6.3)
+bundle exec ruby test/acronym_test.rb 
+
 	
 2) badges : Travis, Code Climate (paseczek zielony/czerwnoy czy testy przechodza, maintenence)
 

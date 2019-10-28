@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'custom_set'
+require_relative '../lib/custom_set'
 
 # Common test data version: 1.3.0 1ef368e
 class CustomSetTest < Minitest::Test

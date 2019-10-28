@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'word_count'
+require_relative '../lib/word_count'
 
 # Common test data version: 1.2.0 77623ec
 class WordCountTest < Minitest::Test
