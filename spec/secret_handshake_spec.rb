@@ -10,7 +10,6 @@ RSpec.describe SecretHandshake do
 	let(:shake31) { SecretHandshake.new 31}
 	let(:shake_string) { SecretHandshake.new 'piggies'}
 
-	describe "#single binary event" do
 		it "1 to wink" do
 			 expect(shake1.commands).to eq ['wink']
 		end
@@ -23,9 +22,7 @@ RSpec.describe SecretHandshake do
 		it "1000 to jump" do
 			 expect(shake8.commands).to eq ['jump']
 		end
-	end
 	
-	describe "#more than one event" do
 		it "11 to wink and double blink" do
 			 expect(shake3.commands).to eq ['wink', 'double blink']
 		end
@@ -35,13 +32,11 @@ RSpec.describe SecretHandshake do
 		it "11111 to all events" do
 			expect(shake31.commands).to eq ['jump', 'close your eyes', 'double blink', 'wink']
 		end
-	end
 	
-	describe "#invalid handshake" do
-		it "return empty list" do
+		it "invalid handshake returns empty list" do
 			expect(shake_string.commands).to eq []
 		end 
-	end
+	
 
 
 end

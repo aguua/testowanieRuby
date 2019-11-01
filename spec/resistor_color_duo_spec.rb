@@ -22,10 +22,8 @@ RSpec.describe ResistorColorDuo do
          expect(num).to eq 33
     end
 
-	describe "#ignore third color" do
-		it "check for green,brown and orange" do
+		it "ignore third color check for green,brown and orange" do
 			num = ResistorColorDuo.value(["green", "brown", "orange"])
 			expect(num).to eq 51
 		end
-	end
 end

@@ -2,7 +2,6 @@ require 'bowling'
 
 RSpec.describe Game do
 
-	describe '#get score for bowling game' do
  		 game1 = Game.new
 		 rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 		 rolls.each { |pins| game1.roll(pins) }
@@ -93,9 +92,8 @@ RSpec.describe Game do
 		 it 'all strikes is a perfect game' do
 			expect(game13.score).to eq 300
 		 end
-	end
 
-	describe '#games raise BowlingError' do
+
 
 		 err_game1 = Game.new
 		 rolls = []
@@ -189,7 +187,5 @@ RSpec.describe Game do
 			 expect{err_game13.roll(3)}.to raise_error Game::BowlingError
 		 end
 
-
-	end
 
 end
