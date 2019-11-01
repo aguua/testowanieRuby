@@ -2,7 +2,6 @@
 require 'acronym'
 
 RSpec.describe Acronym do
-  describe "#acronym" do
 
     it "upcase words" do
          a = Acronym.abbreviate('Portable Network Graphics')
@@ -39,8 +38,5 @@ RSpec.describe Acronym do
 		expect(a).to eq "ROTFLSHTMDCOALM"
 	end
 
-	
-
-  end
 
 end
