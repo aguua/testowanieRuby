@@ -5,5 +5,4 @@ rvm:
   - 2.6
   - 2.3
 script:
-  - bundle exec ruby test/* 
-  - bundle exec rspec
+  - bundle exec rake
