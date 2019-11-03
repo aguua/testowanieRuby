@@ -5,5 +5,5 @@ rvm:
   - 2.3
   - 2.6
 script:
-  - bundle exec ruby test/* 
+  - foreach($t in $(ls .\test\*.rb)) {bundle exec ruby $t} 
   - bundle exec rspec
