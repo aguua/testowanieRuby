@@ -6,5 +6,5 @@ class Hamming
         dna2 = dna2.split("")
     
         dna1.zip(dna2).select { |pair| pair[0] != pair[1] }.count
-      end
+    end
 end
