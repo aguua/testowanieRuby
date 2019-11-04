@@ -1,9 +1,10 @@
 require 'rake/testtask'
 require 'rspec/core/rake_task'
 
-task default: %w[test spec]
+task default: %w[test spec
+ test minitest]
 
-Rake::TestTask.new do |task|
+Rake::TestTask.new(:minitest) do |task|
  task.pattern = 'test/*_test.rb'
 end
  

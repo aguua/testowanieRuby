@@ -1,25 +1,23 @@
-nv:
+env:
   global:
-    - CC_TEST_REPORTER_ID=ABC123language: ruby
-
-before_install:
-  - gem update --system
-  - gem install bundler:2.0.2
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
-
-
+    CC_TEST_REPORTER_ID=4f8ef169d37e6d1f424e413b3742240d1e92db6fadfc262bc9136154d47f7381
+language: ruby
 rvm:
-  - 2.3.8
-  - 2.5.1
-  - 2.6.2
-
-
-
+ - 2.3.8
+ - 2.5.1
+ - 2.6.2
+before_install:
+- gem update --system
+- gem install bundler
+notifications:
+- false
+bundler_args: --without production
+before_script:
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+- chmod +x ./cc-test-reporter
+- ./cc-test-reporter before-build
 script:
-  - bundle exec rake
-  
+- bundle exec rake spec
+- bundle exec rake minitest
 after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-
+- ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
